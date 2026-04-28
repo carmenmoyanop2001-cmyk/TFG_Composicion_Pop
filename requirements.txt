@@ -1,5 +1,8 @@
 streamlit
 numpy
 scipy
-midiutil
+pyphen
+gtts
+pretty_midi
+MIDIUtil
 
