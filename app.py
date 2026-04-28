@@ -70,8 +70,18 @@ if st.button("🚀 Generar Canción"):
 
     with st.spinner("Generando música... esto puede tardar unos segundos"):
 
-        # 🔥 LLAMAS A TU SISTEMA PRINCIPAL SIN TOCARLO
-        audio, bpm_real, emo, midi, letra = Mezcla_Piano_Progresion_Batería_Melodía_Bajo_Letra.produccion_final_maestra()
+        audio, bpm_real, emo, midi, letra = Mezcla_Piano_Progresion_Batería_Melodía_Bajo_Letra.produccion_final_maestra(
+            bpm_in=bpm,
+            segundos_in=duracion,
+            metrica_in=metrica,
+            shift_in=transposicion,
+            modo_in=modo,
+            animo_in=animo,
+            usa_bat=bateria,
+            usa_baj=bajo,
+            usa_pia=piano,
+            usa_mel=melodia
+        )
 
         # -------------------------
         # AUDIO OUTPUT
