@@ -53,7 +53,9 @@ def definir_estructura(bpm, metrica, segundos):
 
     return mapa, pulsos_compas, num_compases
 
-def produccion_final_maestra():
+def produccion_final_maestra(bpm_in=120, segundos_in=20, metrica_in="4/4", 
+                             shift_in=0, modo_in="mayor", animo_in="alegre", 
+                             usa_bat=True, usa_baj=True, usa_pia=True, usa_mel=True):
     print("\n" + "="*60)
     print("   SISTEMA DE PRODUCCIÓN: MEZCLA Y EXPORTACIÓN MIDI")
     print("="*60)
